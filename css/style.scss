@@ -1,0 +1,97 @@
+@import "base.scss";
+
+.o-logo {
+  //width: 220px;
+  //height: 55px;
+}
+
+h2 {
+  color: #FFF;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+p.lead {
+  font-size: 14px;
+  color: $color-lead-text;
+}
+
+.page-register {
+  input {
+    background: $color-input-bg;
+    border: $color-input-bg;
+    color: white;
+    padding: 10px 20px;
+
+    &::placeholder {
+      color: $color-active;
+    }
+
+    &:active, &:focus {
+      background: $color-input-bg;
+      border: $color-input-bg;
+      color: white;
+    }
+
+    &.o-uSecCode {
+      display: inline-block;
+      width: 35%;
+    }
+
+    &.o-uZip {
+      display: inline-block;
+      width: 60%;
+      margin-left: 5%;
+    }
+
+  }
+
+  button[type=submit]{
+    background: $color-active;
+    color: #FFF;
+    border: 0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+}
+
+
+.b-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  min-height: 30px;
+
+  .icon {
+    width: 32px;
+    height: 20px;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    margin: 0 5px 0 auto;
+
+    &.icon-ae {
+      background-image: url('../img/ae.svg');
+    }
+
+    &.icon-di {
+      background-image: url('../img/discover.svg');
+    }
+
+    &.icon-mc {
+      background-image: url('../img/mc.svg');
+    }
+
+    &.icon-visa {
+      background-image: url('../img/visa.svg');
+      margin-right: 0;
+    }
+
+  }
+}

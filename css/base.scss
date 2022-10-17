@@ -1,0 +1,163 @@
+$color-active: #10D0C8;
+$color-bg: #292C36;
+$color-input-bg: #353A4A;
+$color-text: #454A5A;
+$color-lead-text: #838AA2;
+
+//$fontSize-header: clamp(30px, 7vw, 34px);
+//$fontSize-main: clamp(16px, 3vw, 22px);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-display: swap;
+  line-height: 1;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  background: $color-bg;
+  color: $color-text;
+
+  &.js-stop_scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+
+
+  &.-inv {
+    background: #000;
+    color: #FFF;
+  }
+
+
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+::selection {
+  background: $color-active; /* WebKit/Blink Browsers */
+  color: white;
+}
+
+::-moz-selection {
+  background: $color-active; /* Gecko Browsers */
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-color: $color-active;
+  background-color: $color-active;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-width: 1px 1px 1px 2px;
+  border-color: $color-active;
+  background-color:$color-active;
+}
+
+::-webkit-scrollbar-track:hover {
+  border-left: solid 1px #FFF;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  border-width: 0
+}
+
+
+h1, h2, h3, h4 {
+  color: #000;
+
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  color: $color-active;
+  text-decoration: none;
+  transition: all 0.1s ease;
+
+}
+
+a:hover {
+  //color: $color-active;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul{
+  padding-left: 40px;
+  li{}
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding: 0 20px 0 20px;
+}
+
+.containerAlt {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+  padding: 0 20px 0 20px;
+}
+
+
+
+#preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 999;
+  //fill: #FF6700;
+  //background: #FFF;
+
+  background: $color-bg;
+
+  //box-shadow: 0px 5px 80px 14px rgba(34, 60, 80, 0.51) inset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 160px;
+  }
+
+}

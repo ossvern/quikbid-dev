@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^$ index.php?go=/ [L,QSA]
+RewriteRule ^connect$ index.php?go=/connect [L,QSA]
